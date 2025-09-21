@@ -45,22 +45,37 @@ Validez les changements;
 Vous utiliserez le protocole `https` pour cela;
 Vérifiez avec le navigateur;
     ```bash
-    # Commandes pour publier les modifications
+    # git push -u
     ```
 1. Sur la forge, ajoutez un fichier de documentation `README.md`.
-Quelle syntaxe est utilisée pour ce fichier ?
-    > Répondre ici
+  new file --> creer fichier Readme.md
 1. Récupérez localement les modifications effectuées sur la forge.
     ```bash
-    # Répondre ici
+    # git fetch Monrepertoire
+      git checkout Monrepertoire/main --readme.md 
     ```
 1. Ajoutez les répertoires et fichiers issus de la compilation aux fichiers ignorés par `git` (cf. [`.gitignore` pour Java](https://github.com/github/gitignore/blob/main/Java.gitignore));
-    ```bash
-    # Copier ici le contenu de `.gitignore`
+    ```bash 
+    # # Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
     ```
 1. Retirez les fichiers de configuration de l'IDE du projet;
     ```bash
-    # Répondre ici
+    # git rm -r --cached .idea .vscode *.iml 
+    git commit -m "Retrait des fichiers de configuration de l'IDE du projet"
     ```
     Ajoutez-les aux fichiers ignorés par `git`.
     ```bash
