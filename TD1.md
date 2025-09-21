@@ -82,7 +82,9 @@ Vérifiez avec le navigateur;
     # Copier ici les modifications de `.gitignore`
     ```
 1. Configurez l'accès par clé publique/clé privée à la forge (cf. [Connecting to GitHub with SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)).
-    > Expliquez la procédure de façon synthétique
+    > Dns la forge on clique sur setting puis ssh on fait new ssh j'ajoute le nom de la clé plus sur le terminal on fait les commande suivante ssh-keygen -t rsa -b 4096 -C "Mon-email@example.com" puis cat ~/.ssh/id_ed25519.pub
+    ensuite je copie le lien de ma clé publique je la coller sur la zone de key de SSH sur la forge puis je valide Add ssh key
+
 
 ## Partie II (à faire durant le TD) : compléter la classe `Fraction`
 Dans cet partie, vous compléterez les classes `Fraction` et `Main`.
