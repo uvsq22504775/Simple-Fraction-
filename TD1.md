@@ -195,11 +195,12 @@ Pour réaliser cette exercice, vous devez bien évidemment vous reporter à la d
 1. Comment vérifier/définir que l'encodage utilisé est *UTF-8* ?
     > Répondre ici
 1. Comment choisir le JDK à utiliser dans un projet ?
-    > Répondre ici
+    > export JAVA_HOME=/chemin/vers/le/jdk
+export PATH=$JAVA_HOME/bin:$PATH
 1. Comment préciser la version Java des sources dans un projet ?
-    > Répondre ici
+    > javac --release 17 MonFichier.java
 1. Comment ajouter une bibliothèque externe dans un projet ?
-    > Répondre ici
+    > javac -cp lib/nom_bibliotheque.jar MonFichier.java
 1. Comment reformater un fichier source Java ?
     > Répondre ici
 1. Comment trouver la déclaration d'une variable ou méthode ?
